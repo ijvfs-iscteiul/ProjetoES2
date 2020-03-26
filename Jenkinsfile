@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('Step2') {
+      steps {
+        echo 'Hi there!'
+        timeout(time: 20)
+      }
+    }
+
   }
 }
